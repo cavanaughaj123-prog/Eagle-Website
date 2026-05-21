@@ -1,0 +1,1198 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Aquinas Eagle – Premium Scouting Products</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+:root{
+    --navy:#0a1f44;
+    --navy-light:#16325f;
+    --gold:#c9a84c;
+    --gold-light:#f0d080;
+    --white:#ffffff;
+    --light:#f5f7fb;
+    --gray:#64748b;
+    --shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+body{
+    font-family:'Open Sans',sans-serif;
+    background:var(--white);
+    color:#111827;
+    overflow-x:hidden;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:75px;
+    background:rgba(10,31,68,0.92);
+    backdrop-filter:blur(12px);
+    z-index:1000;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 5%;
+    transition:.3s;
+}
+
+nav.scrolled{
+    height:65px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.2);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:.7rem;
+    text-decoration:none;
+}
+
+.logo-icon{
+    font-size:2rem;
+}
+
+.logo-text{
+    color:var(--gold);
+    font-family:'Montserrat',sans-serif;
+    font-weight:800;
+    font-size:1.2rem;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:2rem;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:rgba(255,255,255,0.85);
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--gold-light);
+}
+
+.nav-btn{
+    background:var(--gold);
+    color:var(--navy) !important;
+    padding:.7rem 1.2rem;
+    border-radius:8px;
+    font-weight:700 !important;
+    box-shadow:0 8px 20px rgba(201,168,76,0.25);
+}
+
+.nav-btn:hover{
+    background:var(--gold-light);
+    transform:translateY(-2px);
+}
+
+/* MOBILE MENU */
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    cursor:pointer;
+}
+
+.hamburger span{
+    width:28px;
+    height:3px;
+    background:white;
+    border-radius:5px;
+}
+
+.mobile-menu{
+    position:fixed;
+    top:75px;
+    right:-100%;
+    width:280px;
+    height:100vh;
+    background:var(--navy);
+    padding:2rem;
+    transition:.4s;
+    z-index:999;
+}
+
+.mobile-menu.active{
+    right:0;
+}
+
+.mobile-menu ul{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+}
+
+.mobile-menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(10,31,68,0.82),rgba(10,31,68,0.82)),
+    url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    padding:120px 5%;
+    position:relative;
+}
+
+.hero-content{
+    max-width:850px;
+    color:white;
+}
+
+.hero-badge{
+    display:inline-block;
+    background:rgba(201,168,76,0.15);
+    border:1px solid var(--gold);
+    color:var(--gold-light);
+
+    padding:.45rem 1rem;
+    border-radius:30px;
+
+    font-size:.8rem;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+
+    margin-bottom:1.5rem;
+}
+
+.hero h1{
+    font-family:'Montserrat',sans-serif;
+    font-size:clamp(2.7rem,6vw,5rem);
+    line-height:1.05;
+    margin-bottom:1.5rem;
+}
+
+.hero h1 span{
+    color:var(--gold);
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    color:rgba(255,255,255,0.85);
+    font-size:1.1rem;
+    margin-bottom:2.5rem;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:1rem 2rem;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--gold);
+    color:var(--navy);
+
+    box-shadow:0 8px 20px rgba(201,168,76,0.25);
+}
+
+.btn-primary:hover{
+    background:var(--gold-light);
+    transform:translateY(-3px);
+    box-shadow:0 12px 30px rgba(201,168,76,0.45);
+}
+
+.btn-secondary{
+    border:2px solid rgba(255,255,255,0.3);
+    color:white;
+}
+
+.btn-secondary:hover{
+    background:rgba(255,255,255,0.08);
+    border-color:var(--gold);
+}
+
+/* =========================
+   TRUST BAR
+========================= */
+
+.trust-bar{
+    background:var(--gold);
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+}
+
+.trust-item{
+    text-align:center;
+    padding:1rem;
+    font-weight:700;
+    color:var(--navy);
+}
+
+/* =========================
+   SECTION STYLES
+========================= */
+
+section{
+    padding:6rem 5%;
+    position:relative;
+}
+
+section::before{
+    content:'';
+    position:absolute;
+    inset:0;
+
+    background:
+    radial-gradient(circle at top right,
+    rgba(201,168,76,0.04),
+    transparent 40%);
+
+    pointer-events:none;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-header{
+    text-align:center;
+    margin-bottom:4rem;
+}
+
+.section-tag{
+    color:var(--gold);
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:.8rem;
+}
+
+.section-title{
+    font-family:'Montserrat',sans-serif;
+    font-size:clamp(2rem,4vw,3rem);
+    color:var(--navy);
+    margin:.7rem 0 1rem;
+}
+
+.section-sub{
+    max-width:700px;
+    margin:auto;
+    color:var(--gray);
+    line-height:1.8;
+}
+
+/* =========================
+   CATEGORY CARDS
+========================= */
+
+.categories{
+    background:var(--light);
+}
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:1.5rem;
+}
+
+.category-card{
+    background:white;
+    border-radius:18px;
+    padding:2rem;
+    text-align:center;
+    transition:.35s;
+    box-shadow:var(--shadow);
+
+    opacity:0;
+    transform:translateY(30px);
+}
+
+.category-card.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.category-card:hover{
+    transform:translateY(-8px);
+}
+
+.category-icon{
+    font-size:3rem;
+    margin-bottom:1rem;
+}
+
+.category-card h3{
+    font-family:'Montserrat',sans-serif;
+    color:var(--navy);
+    margin-bottom:.5rem;
+}
+
+.category-card p{
+    color:var(--gray);
+    font-size:.9rem;
+}
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:1.8rem;
+}
+
+.product-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    transition:.35s;
+
+    opacity:0;
+    transform:translateY(30px);
+}
+
+.product-card.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+}
+
+.product-image{
+    height:240px;
+    overflow:hidden;
+    position:relative;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.product-card:hover img{
+    transform:scale(1.05);
+}
+
+.product-badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+
+    background:var(--gold);
+    color:var(--navy);
+
+    padding:.35rem .8rem;
+    border-radius:30px;
+
+    font-size:.7rem;
+    font-weight:800;
+}
+
+.product-info{
+    padding:1.4rem;
+}
+
+.product-category{
+    color:var(--gold);
+    font-size:.75rem;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin-bottom:.5rem;
+}
+
+.product-title{
+    font-family:'Montserrat',sans-serif;
+    color:var(--navy);
+    margin-bottom:.6rem;
+}
+
+.product-desc{
+    color:var(--gray);
+    line-height:1.6;
+    font-size:.92rem;
+    margin-bottom:1rem;
+}
+
+.product-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.price{
+    font-size:1.2rem;
+    font-weight:800;
+    color:var(--navy);
+}
+
+.add-btn{
+    background:var(--navy);
+    color:white;
+    border:none;
+    padding:.7rem 1rem;
+    border-radius:8px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.add-btn:hover{
+    background:var(--navy-light);
+}
+
+/* =========================
+   AMAZON CTA
+========================= */
+
+.amazon-section{
+    background:var(--navy);
+    text-align:center;
+    color:white;
+    border-radius:30px;
+}
+
+.amazon-section h2{
+    font-family:'Montserrat',sans-serif;
+    font-size:clamp(2rem,4vw,3rem);
+    margin-bottom:1rem;
+}
+
+.amazon-section p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    opacity:.85;
+    margin-bottom:2rem;
+}
+
+.amazon-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:.7rem;
+
+    background:#ff9900;
+    color:#111;
+
+    padding:1rem 1.8rem;
+    border-radius:12px;
+
+    text-decoration:none;
+    font-weight:800;
+    transition:.3s;
+}
+
+.amazon-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonials{
+    background:var(--light);
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:1.5rem;
+}
+
+.testimonial-card{
+    background:white;
+    border-radius:18px;
+    padding:2rem;
+    box-shadow:var(--shadow);
+
+    opacity:0;
+    transform:translateY(30px);
+}
+
+.testimonial-card.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.stars{
+    color:var(--gold);
+    margin-bottom:1rem;
+}
+
+.testimonial-card p{
+    color:#334155;
+    line-height:1.8;
+    margin-bottom:1rem;
+    font-style:italic;
+}
+
+.reviewer{
+    font-weight:700;
+    color:var(--navy);
+}
+
+/* =========================
+   FLOATING CART
+========================= */
+
+.floating-cart{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+
+    width:65px;
+    height:65px;
+
+    background:var(--gold);
+    color:var(--navy);
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:1.7rem;
+
+    cursor:pointer;
+    z-index:999;
+
+    box-shadow:0 12px 25px rgba(0,0,0,0.25);
+}
+
+.cart-count{
+    position:absolute;
+    top:-5px;
+    right:-5px;
+
+    width:24px;
+    height:24px;
+
+    background:var(--navy);
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:.75rem;
+    font-weight:700;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#06112b;
+    color:rgba(255,255,255,0.7);
+    padding:4rem 5%;
+}
+
+.footer-grid{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:2rem;
+}
+
+.footer-grid h3{
+    color:var(--gold);
+    margin-bottom:1rem;
+}
+
+.footer-grid ul{
+    list-style:none;
+}
+
+.footer-grid li{
+    margin-bottom:.6rem;
+}
+
+.footer-grid a{
+    color:rgba(255,255,255,0.7);
+    text-decoration:none;
+}
+
+.footer-grid a:hover{
+    color:white;
+}
+
+.footer-bottom{
+    margin-top:3rem;
+    text-align:center;
+    opacity:.6;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:850px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+
+<nav id="navbar">
+
+    <a href="#" class="logo">
+        <div class="logo-icon">🦅</div>
+        <div class="logo-text">Aquinas Eagle</div>
+    </a>
+
+    <ul class="nav-links">
+       <li><a href="index.html">Home</a></li>
+       <li><a href="products.html">Products</a></li>
+       <li><a href="about.html">About</a></li>
+       <li><a href="reviews.html">Reviews</a></li>
+       <li><a href="contact.html">Contact</a></li>
+       <li><a href="#" class="nav-btn">Shop Now</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</nav>
+
+<!-- MOBILE MENU -->
+
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            Trusted by Scout Families Nationwide
+        </div>
+
+        <h1>
+            Premium Products for <span>Scouts & Leaders</span>
+        </h1>
+
+        <p>
+            Aquinas Eagle publishes premium scouting books,
+            ceremony products, journals, and accessories trusted
+            by troops and scout leaders across the country.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#products" class="btn btn-primary">
+                Shop Products
+            </a>
+
+            <a href="#amazon" class="btn btn-secondary">
+                View Amazon Store
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TRUST BAR -->
+
+<div class="trust-bar">
+
+    <div class="trust-item">
+        🚚 Free Shipping Over $35
+    </div>
+
+    <div class="trust-item">
+        ⭐ 4.8 Average Rating
+    </div>
+
+    <div class="trust-item">
+        🏕 Trusted by Scout Leaders
+    </div>
+
+    <div class="trust-item">
+        📦 Amazon Best Sellers
+    </div>
+
+</div>
+
+<!-- CATEGORIES -->
+
+<section class="categories" id="categories">
+
+    <div class="container">
+
+        <div class="section-header">
+            <div class="section-tag">Collections</div>
+            <h2 class="section-title">Browse Categories</h2>
+            <p class="section-sub">
+                Carefully designed scouting products for
+                youth leaders, parents, and troops.
+            </p>
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category-card reveal">
+                <div class="category-icon">📖</div>
+                <h3>Scouting Books</h3>
+                <p>Guides and leadership resources.</p>
+            </div>
+
+            <div class="category-card reveal">
+                <div class="category-icon">🏕</div>
+                <h3>Camping Gear</h3>
+                <p>Outdoor essentials and accessories.</p>
+            </div>
+
+            <div class="category-card reveal">
+                <div class="category-icon">🦅</div>
+                <h3>Eagle Scout</h3>
+                <p>Ceremony and recognition products.</p>
+            </div>
+
+            <div class="category-card reveal">
+                <div class="category-icon">🎖</div>
+                <h3>Badges & Patches</h3>
+                <p>Organizers and display accessories.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+    <div class="container">
+
+        <div class="section-header">
+            <div class="section-tag">Best Sellers</div>
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-sub">
+                Highly rated products available through
+                Amazon and major retailers nationwide.
+            </p>
+        </div>
+
+        <div class="products-grid">
+
+            <div class="product-card reveal">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1200">
+                    <div class="product-badge">Best Seller</div>
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Scouting Books
+                    </div>
+
+                    <h3 class="product-title">
+                        Eagle Scout Leadership Handbook
+                    </h3>
+
+                    <p class="product-desc">
+                        The ultimate practical guide for
+                        scouts pursuing leadership excellence.
+                    </p>
+
+                    <div class="product-footer">
+
+                        <div class="price">
+                            $18.99
+                        </div>
+
+                        <button class="add-btn">
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product-card reveal">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200">
+                    <div class="product-badge">Popular</div>
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Outdoor Gear
+                    </div>
+
+                    <h3 class="product-title">
+                        Scout Trail Journal
+                    </h3>
+
+                    <p class="product-desc">
+                        Durable weather-resistant journal
+                        designed for outdoor adventures.
+                    </p>
+
+                    <div class="product-footer">
+
+                        <div class="price">
+                            $12.99
+                        </div>
+
+                        <button class="add-btn">
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product-card reveal">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200">
+                    <div class="product-badge">New</div>
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Ceremony Products
+                    </div>
+
+                    <h3 class="product-title">
+                        Court of Honor Kit
+                    </h3>
+
+                    <p class="product-desc">
+                        Elegant invitation and ceremony
+                        materials for Eagle Scout events.
+                    </p>
+
+                    <div class="product-footer">
+
+                        <div class="price">
+                            $15.99
+                        </div>
+
+                        <button class="add-btn">
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- AMAZON CTA -->
+
+<section id="amazon">
+
+    <div class="container">
+
+        <div class="amazon-section">
+
+            <h2>
+                Shop the Full Collection on Amazon
+            </h2>
+
+            <p>
+                Explore customer favorites, fast shipping,
+                and verified reviews through our trusted
+                Amazon storefront.
+            </p>
+
+            <a href="https://amazon.com" class="amazon-btn">
+                🛒 Visit Amazon Store
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section class="testimonials" id="reviews">
+
+    <div class="container">
+
+        <div class="section-header">
+            <div class="section-tag">Testimonials</div>
+            <h2 class="section-title">What Customers Say</h2>
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card reveal">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    “Fantastic quality and extremely useful
+                    for our troop leadership program.”
+                </p>
+
+                <div class="reviewer">
+                    — Scoutmaster, Texas
+                </div>
+
+            </div>
+
+            <div class="testimonial-card reveal">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    “Beautiful ceremony materials and fast
+                    Amazon shipping. Highly recommended.”
+                </p>
+
+                <div class="reviewer">
+                    — Eagle Scout Parent
+                </div>
+
+            </div>
+
+            <div class="testimonial-card reveal">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    “The journals and books are premium quality.
+                    Perfect for young scouts.”
+                </p>
+
+                <div class="reviewer">
+                    — Troop Leader
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+
+            <h3>Aquinas Eagle</h3>
+
+            <p>
+                Premium scouting books and specialty
+                products designed for leaders, families,
+                and youth organizations nationwide.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Shop</h3>
+
+            <ul>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Camping Gear</a></li>
+                <li><a href="#">Ceremony Products</a></li>
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Company</h3>
+
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Amazon Store</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Aquinas Eagle. All rights reserved.
+    </div>
+
+</footer>
+
+<!-- FLOATING CART -->
+
+<div class="floating-cart">
+    🛒
+    <div class="cart-count">2</div>
+</div>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+/* NAV SHRINK */
+
+window.addEventListener('scroll',()=>{
+
+    const nav=document.getElementById('navbar');
+
+    if(window.scrollY > 40){
+        nav.classList.add('scrolled');
+    }else{
+        nav.classList.remove('scrolled');
+    }
+
+});
+
+/* MOBILE MENU */
+
+const hamburger=document.getElementById('hamburger');
+const mobileMenu=document.getElementById('mobileMenu');
+
+hamburger.addEventListener('click',()=>{
+
+    mobileMenu.classList.toggle('active');
+
+});
+
+/* REVEAL ANIMATIONS */
+
+const reveals=document.querySelectorAll('.reveal');
+
+const observer=new IntersectionObserver(entries=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add('visible');
+
+        }
+
+    });
+
+},{threshold:0.1});
+
+reveals.forEach(el=>observer.observe(el));
+
+</script>
+
+</body>
+</html>
