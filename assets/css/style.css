@@ -295,7 +295,7 @@ section::before{
 }
 
 .container{
-    max-width:1200px;
+    width:min(1200px,92%);
     margin:auto;
 }
 
