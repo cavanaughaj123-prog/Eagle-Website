@@ -1048,3 +1048,8 @@ footer{
 .mb-2{
     margin-bottom:2rem;
 }
+
+.category-card{
+    text-decoration:none;
+    color:inherit;
+}
