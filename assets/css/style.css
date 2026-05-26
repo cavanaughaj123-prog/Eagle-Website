@@ -413,11 +413,18 @@ section::before{
 }
 
 .product-image{
-    height:420px;
+    height:240px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:white;
+    overflow:hidden;
+    padding:1rem;
+}
 
 .product-image img{
+    max-height:200px;
     width:auto;
-    height:100%;
     object-fit:contain;
     display:block;
     margin:auto;
