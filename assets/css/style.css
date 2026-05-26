@@ -1057,3 +1057,22 @@ footer{
     text-decoration:none;
     color:inherit;
 }
+
+/* PRODUCT PAGE CATEGORIES */
+
+.product-category-section{
+    margin-bottom:5rem;
+}
+
+.category-heading{
+    font-family:'Montserrat',sans-serif;
+    color:var(--navy);
+
+    font-size:2rem;
+
+    margin-bottom:2rem;
+
+    display:flex;
+    align-items:center;
+    gap:.7rem;
+}
