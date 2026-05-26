@@ -1075,3 +1075,9 @@ footer{
     align-items:center;
     gap:.7rem;
 }
+
+/* FEATURED PRODUCTS BACKGROUND */
+
+#products{
+    background:var(--light);
+}
