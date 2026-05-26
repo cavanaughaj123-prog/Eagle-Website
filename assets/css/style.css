@@ -409,7 +409,7 @@ section::before{
 }
 
 .product-card:hover{
-    transform:translateY(-8px);
+    transform:none;
 }
 
 .product-image{
