@@ -1057,6 +1057,14 @@ footer{
     color:inherit;
 }
 
+.mission-image{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    border-radius:20px;
+    display:block;
+}
+
 /* SPLIT IMAGE + TEXT SECTION */
 
 .split-section{
