@@ -1,0 +1,88 @@
+<!-- PRODUCTS -->
+
+<section id="products">
+
+    <div class="container">
+
+        <div class="section-header">
+            <div class="section-tag">Best Sellers</div>
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-sub">
+                Highly rated products available through
+                Amazon
+            </p>
+        </div>
+
+        <div class="products-grid">
+
+            <div class="product-card reveal">
+
+                <div class="product-image">
+                    <img src="assets/images/dts eagle handbook.jpg">
+                    <div class="product-badge">Best Seller</div>
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Scout Items
+                    </div>
+
+                    <h3 class="product-title">
+                        Mosquito Net for Camping and Bed 10 Pack Bulk Set Portable Fine Mesh Bug Net
+                    </h3>
+
+                    <p class="product-desc">
+                         79Lx35Wx71H fits a twin mattress; roomy enough to tuck underneath bedding or mattress.
+                    </p>
+
+                    <div class="product-footer">
+
+                        <div class="price">
+                            $90.99
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product-card reveal">
+
+                <div class="product-image">
+                    <img src="assets/images/mosquitonet.jpg">
+                    <div class="product-badge">Popular</div>
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Greeting Cards
+                    </div>
+
+                    <h3 class="product-title">
+                        Lighthouse Card and Pin Gift Set Inspirational Sobriety Gift for Recovery Sponsor, Mentor, or 12-Step Supporter
+                    </h3>
+
+                    <p class="product-desc">
+                        Meaningful 5 x 7 lighthouse thank you card paired with a coordinating 1-inch enamel lighthouse pin, created to honor the guidance, encouragement, and support of a sponsor, mentor, or recovery companion.
+                    </p>
+
+                    <div class="product-footer">
+
+                        <div class="price">
+                            $9.99
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
