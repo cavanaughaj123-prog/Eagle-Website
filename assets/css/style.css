@@ -1102,6 +1102,9 @@ footer{
     display:flex;
     flex-direction:column;
     justify-content:center;
+
+    height:fit-content;
+    align-self:center;
 }
 
 /* PRODUCT PAGE CATEGORIES */
