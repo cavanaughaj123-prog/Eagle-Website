@@ -1,1 +1,121 @@
+<!-- PRODUCTS -->
 
+<section id="products">
+
+    <div class="container">
+
+        <div class="section-header">
+            <div class="section-tag">Best Sellers</div>
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-sub">
+                Highly rated products available through
+                Amazon
+            </p>
+        </div>
+
+        <div class="products-grid">
+
+            <div class="product-card reveal">
+
+                <div class="product-image">
+                    <img src="assets/images/dts eagle handbook.jpg">
+                    <div class="product-badge">Best Seller</div>
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Scout Items
+                    </div>
+
+                    <h3 class="product-title">
+                        Eagle Scout Neckerchief Slide Tiger Head
+                    </h3>
+
+                    <p class="product-desc">
+                        Cast metal neckerchief slide with intricate Lions head details, a key element in the Scout uniform.
+                    </p>
+
+                    <div class="product-footer">
+
+                        <div class="price">
+                            $9.99
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product-card reveal">
+
+                <div class="product-image">
+                    <img src="assets/images/mosquitonet.jpg">
+                    <div class="product-badge">Popular</div>
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Greeting Cards
+                    </div>
+
+                    <h3 class="product-title">
+                        Citizenship Congratulations Card – Patriotic American Flag
+                    </h3>
+
+                    <p class="product-desc">
+                        Celebrate an amazing milestone with a patriotic card designed specifically to honor a new American citizen.
+                    </p>
+
+                    <div class="product-footer">
+
+                        <div class="price">
+                            $6.99
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product-card reveal">
+
+                <div class="product-image">
+                    <img src="assets/images/flaggreeting.jpg">
+                    <div class="product-badge">Classic</div>
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Scout Items
+                    </div>
+
+                    <h3 class="product-title">
+                        Scout Be Prepared Slap Band Ruler Bookmark 6 Pack Trefoil Green
+                    </h3>
+
+                    <p class="product-desc">
+                        Includes six slap bands suitable for troop gifts, SWAPS, meeting rewards, and camp accessories.
+                    </p>
+
+                    <div class="product-footer">
+
+                        <div class="price">
+                            $12.99
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
