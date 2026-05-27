@@ -1,0 +1,121 @@
+<!-- PRODUCTS -->
+
+<section id="products">
+
+    <div class="container">
+
+        <div class="section-header">
+            <div class="section-tag">Best Sellers</div>
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-sub">
+                Highly rated products available through
+                Amazon
+            </p>
+        </div>
+
+        <div class="products-grid">
+
+            <div class="product-card reveal">
+
+                <div class="product-image">
+                    <img src="assets/images/dts eagle handbook.jpg">
+                    <div class="product-badge">Best Seller</div>
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Scout Items
+                    </div>
+
+                    <h3 class="product-title">
+                        Boy Scout Be Prepared Green Ruler Slap Band, Pack of 6
+                    </h3>
+
+                    <p class="product-desc">
+                         Accurate 8 inch and 20 centimeter ruler on the back. Good use as a bookmark, also an addition to a survival kit.
+                    </p>
+
+                    <div class="product-footer">
+
+                        <div class="price">
+                            $12.99
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product-card reveal">
+
+                <div class="product-image">
+                    <img src="assets/images/mosquitonet.jpg">
+                    <div class="product-badge">Popular</div>
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Eagle Scout Gifts
+                    </div>
+
+                    <h3 class="product-title">
+                        Eagle Scout Magnet – “Dare to Soar” Inspirational Message
+                    </h3>
+
+                    <p class="product-desc">
+                        This high quality rubber magnet is a great gift idea for any Eagle Scout. Small enough to fit perfectly on the front or side of your fridge.
+                    </p>
+
+                    <div class="product-footer">
+
+                        <div class="price">
+                            $6.99
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product-card reveal">
+
+                <div class="product-image">
+                    <img src="assets/images/flaggreeting.jpg">
+                    <div class="product-badge">Classic</div>
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Pins and Badges
+                    </div>
+
+                    <h3 class="product-title">
+                        Wood Badge Eagle Pin - Silvertone Award Lapel Pin
+                    </h3>
+
+                    <p class="product-desc">
+                        Silvertone Wood Badge Eagle lapel pin is 1in by 1in, intricate detail, handcrafted. Has butterfly clutch to hold securely.
+                    </p>
+
+                    <div class="product-footer">
+
+                        <div class="price">
+                            $9.99
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
