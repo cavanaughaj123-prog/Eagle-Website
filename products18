@@ -1,0 +1,121 @@
+<!-- PRODUCTS -->
+
+<section id="products">
+
+    <div class="container">
+
+        <div class="section-header">
+            <div class="section-tag">Best Sellers</div>
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-sub">
+                Highly rated products available through
+                Amazon
+            </p>
+        </div>
+
+        <div class="products-grid">
+
+            <div class="product-card reveal">
+
+                <div class="product-image">
+                    <img src="assets/images/dts eagle handbook.jpg">
+                    <div class="product-badge">Best Seller</div>
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Scout Items
+                    </div>
+
+                    <h3 class="product-title">
+                        Cub Scout Be Prepared Blue Ruler Slap Band Bookmark
+                    </h3>
+
+                    <p class="product-desc">
+                         Accurate 8 Inch and 20 cm on the back. Great addition to survival kit - stores in small places.
+                    </p>
+
+                    <div class="product-footer">
+
+                        <div class="price">
+                            $6.99
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product-card reveal">
+
+                <div class="product-image">
+                    <img src="assets/images/mosquitonet.jpg">
+                    <div class="product-badge">Popular</div>
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Greeting Cards
+                    </div>
+
+                    <h3 class="product-title">
+                        Canadian Citizenship Congratulations Card - So Happy Canada Gets To Keep You!
+                    </h3>
+
+                    <p class="product-desc">
+                        Sized 5x7 folded; mails with standard postage. Printed in the USA on recycled card stock, white envelope included.
+                    </p>
+
+                    <div class="product-footer">
+
+                        <div class="price">
+                            $6.99
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product-card reveal">
+
+                <div class="product-image">
+                    <img src="assets/images/flaggreeting.jpg">
+                    <div class="product-badge">Classic</div>
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Scout Items
+                    </div>
+
+                    <h3 class="product-title">
+                        Neckerchief Slide Red Rubber Wood Badge Monkeys Fist Bolo Turks Head Woggle
+                    </h3>
+
+                    <p class="product-desc">
+                        This expandable monkey's fist can fit any neckerchief. Size: 1.5" o.d. by .75" i.d. by 1" h.
+                    </p>
+
+                    <div class="product-footer">
+
+                        <div class="price">
+                            $9.99
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
