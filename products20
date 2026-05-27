@@ -1,0 +1,121 @@
+<!-- PRODUCTS -->
+
+<section id="products">
+
+    <div class="container">
+
+        <div class="section-header">
+            <div class="section-tag">Best Sellers</div>
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-sub">
+                Highly rated products available through
+                Amazon
+            </p>
+        </div>
+
+        <div class="products-grid">
+
+            <div class="product-card reveal">
+
+                <div class="product-image">
+                    <img src="assets/images/dts eagle handbook.jpg">
+                    <div class="product-badge">Best Seller</div>
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Scout Items
+                    </div>
+
+                    <h3 class="product-title">
+                        Scout Neckerchief Slide Pink Turks Head Woggle Wood Badge Bolo Monkeys Fist
+                    </h3>
+
+                    <p class="product-desc">
+                         Transparent pink turks head woggle is perfect for any scout or Wood Badge. Size: 1.5" o.d. by .75" i.d.by 1" h.
+                    </p>
+
+                    <div class="product-footer">
+
+                        <div class="price">
+                            $9.99
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product-card reveal">
+
+                <div class="product-image">
+                    <img src="assets/images/mosquitonet.jpg">
+                    <div class="product-badge">Popular</div>
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Scout Items
+                    </div>
+
+                    <h3 class="product-title">
+                        Wristband Silicone Bulk Pack of 40, Blue with Bright White Inspirational Message
+                    </h3>
+
+                    <p class="product-desc">
+                        Made of durable silicone rubber, comfortable to wear. Each wristband is approx. 8" around and .5" wide.
+                    </p>
+
+                    <div class="product-footer">
+
+                        <div class="price">
+                            $14.99
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product-card reveal">
+
+                <div class="product-image">
+                    <img src="assets/images/flaggreeting.jpg">
+                    <div class="product-badge">Classic</div>
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Greeting Cards
+                    </div>
+
+                    <h3 class="product-title">
+                        Funny Vegan Thanksgiving Card
+                    </h3>
+
+                    <p class="product-desc">
+                        A fun greeting card for friends, family, coworkers, hosts, teachers, or anyone celebrating a meat-free Thanksgiving with stuffing, pie, and plant-based favorites.
+                    </p>
+
+                    <div class="product-footer">
+
+                        <div class="price">
+                            $7.99
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
