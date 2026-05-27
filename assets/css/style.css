@@ -1104,6 +1104,13 @@ footer{
     display:flex;
     flex-direction:column;
     justify-content:center;
+
+    gap:2rem;
+    height:100%;
+}
+
+.split-text p{
+    flex:1;
 }
 
 /* PRODUCT PAGE CATEGORIES */
