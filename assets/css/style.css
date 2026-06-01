@@ -1265,3 +1265,12 @@ footer{
 
     font-family:'Montserrat',sans-serif;
 }
+
+.product-image img{
+    max-height:200px;
+    width:auto;
+    object-fit:contain;
+
+    position:relative;
+    z-index:1;
+}
