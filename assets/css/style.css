@@ -428,6 +428,47 @@ section::before{
     padding:1rem;
 }
 
+.product-image-link{
+    position:absolute;
+    inset:0;
+
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+
+    padding-bottom:1rem;
+
+    background:rgba(10,31,68,0.18);
+
+    opacity:0;
+
+    transition:opacity .25s;
+
+    text-decoration:none;
+}
+
+.product-card:hover .product-image-link{
+    opacity:1;
+}
+
+.view-btn{
+    background:var(--gold);
+
+    color:var(--navy);
+
+    font-weight:800;
+
+    font-size:.82rem;
+
+    padding:.55rem 1.3rem;
+
+    border-radius:30px;
+
+    font-family:'Montserrat',sans-serif;
+
+    letter-spacing:.4px;
+}
+
 .product-image img{
     max-height:200px;
     width:auto;
