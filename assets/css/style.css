@@ -437,7 +437,7 @@ section::before {
     opacity: 0;
     transition: opacity .25s;
     text-decoration: none;
-    z-index: 5;
+    z-index: 10;
 }
 
 .product-card:hover .product-image-link {
@@ -452,6 +452,8 @@ section::before {
     padding: .55rem 1.3rem;
     border-radius: 30px;
     font-family: 'Montserrat', sans-serif;
+    position: relative;
+    z-index: 11;
 }
 
 .product-badge {
