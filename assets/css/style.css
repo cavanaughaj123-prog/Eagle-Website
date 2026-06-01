@@ -408,10 +408,6 @@ section::before{
     transform:translateY(0);
 }
 
-.product-card:hover{
-    transform:none;
-}
-
 .product-image{
     position:relative;
 
