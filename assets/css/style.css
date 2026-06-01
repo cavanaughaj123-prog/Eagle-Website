@@ -395,8 +395,8 @@ section::before {
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: .35s;
-    opacity: 0;
-    transform: translateY(30px);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .product-card.visible {
