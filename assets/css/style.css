@@ -1039,3 +1039,36 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* ==========================================================================
+   FORCE OVERLAY HOVER FIX
+   ========================================================================== */
+.product-image {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.product-image img {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.product-image-link {
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 20 !important; /* Forces the link wrapper on top of the image */
+    display: flex !important;
+    opacity: 0;
+    transition: opacity .25s ease-in-out !important;
+}
+
+/* Force opacity to 1 on hover regardless of other rules */
+.product-card:hover .product-image-link {
+    opacity: 1 !important;
+}
+
+.view-btn {
+    position: relative !important;
+    z-index: 25 !important; /* Places the text on top of everything */
+    pointer-events: auto !important; /* Ensures it can be clicked */
+}
