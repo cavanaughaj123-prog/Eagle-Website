@@ -3,6 +3,10 @@ img{
     display:block;
 }
 
+.product-image-link{
+    opacity:1 !important;
+}
+
 /* =========================
    RESET
 ========================= */
