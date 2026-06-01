@@ -413,12 +413,18 @@ section::before{
 }
 
 .product-image{
+    position:relative;
+
     height:240px;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
     background:white;
+
     overflow:hidden;
+
     padding:1rem;
 }
 
