@@ -337,7 +337,7 @@ section::before {
     transform: translateY(0);
 }
 
-.category-card.visible {
+.category-card.reveal {
     opacity: 1;
     transform: translateY(0);
 }
@@ -399,7 +399,7 @@ section::before {
     transform: translateY(0);
 }
 
-.product-card.visible {
+.product-card.reveal {
     opacity: 1;
     transform: translateY(0);
 }
@@ -583,7 +583,7 @@ section::before {
     transform: translateY(0);
 }
 
-.testimonial-card.visible {
+.testimonial-card.reveal {
     opacity: 1;
     transform: translateY(0);
 }
