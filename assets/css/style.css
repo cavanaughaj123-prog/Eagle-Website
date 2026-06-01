@@ -1244,6 +1244,8 @@ footer{
     transition:opacity .25s;
 
     text-decoration:none;
+
+    z-index:5;
 }
 
 .product-card:hover .product-image-link{
