@@ -1222,3 +1222,40 @@ footer{
 #products{
     background:var(--light);
 }
+
+.product-image{
+    position:relative !important;
+}
+
+.product-image-link{
+    position:absolute !important;
+    top:0 !important;
+    left:0 !important;
+    width:100% !important;
+    height:100% !important;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    background:rgba(10,31,68,0.55) !important;
+
+    opacity:1 !important;
+
+    z-index:20 !important;
+
+    text-decoration:none !important;
+}
+
+.view-btn{
+    background:#c9a84c !important;
+    color:#0a1f44 !important;
+
+    padding:12px 22px !important;
+
+    border-radius:30px !important;
+
+    font-weight:800 !important;
+
+    display:inline-block !important;
+}
