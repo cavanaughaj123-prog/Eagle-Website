@@ -333,8 +333,8 @@ section::before {
     box-shadow: var(--shadow);
     text-decoration: none;
     color: inherit;
-    opacity: 0;
-    transform: translateY(30px);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .category-card.visible {
@@ -579,8 +579,8 @@ section::before {
     border-radius: 18px;
     padding: 2rem;
     box-shadow: var(--shadow);
-    opacity: 0;
-    transform: translateY(30px);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .testimonial-card.visible {
