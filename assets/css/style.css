@@ -410,9 +410,9 @@ section::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: white;
     overflow: hidden;
     padding: 1rem;
+    z-index: 1; /* Sets a base layer stack for this container */
 }
 
 .product-image img {
@@ -421,23 +421,25 @@ section::before {
     object-fit: contain;
     display: block;
     margin: auto;
-    position: relative;
-    z-index: 1;
+    transition: transform .5s;
 }
 
-/* FIXED APPLIED OVERLAY STYLING */
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+/* FIXED LAYER HOVER OVERLAY */
 .product-image-link {
     position: absolute;
     inset: 0;
     display: flex;
-    align-items: flex-end;
+    align-items: center; /* Changed to center so the button is perfectly dead center */
     justify-content: center;
-    padding-bottom: 1rem;
-    background: rgba(10,31,68,0.18);
+    background: rgba(10, 31, 68, 0.45); /* Darkened slightly so your gold button pops */
     opacity: 0;
-    transition: opacity .25s;
+    transition: opacity .25s ease;
     text-decoration: none;
-    z-index: 10;
+    z-index: 3; /* Forces the link and its background overlay ABOVE the image */
 }
 
 .product-card:hover .product-image-link {
@@ -452,8 +454,12 @@ section::before {
     padding: .55rem 1.3rem;
     border-radius: 30px;
     font-family: 'Montserrat', sans-serif;
-    position: relative;
-    z-index: 11;
+    transition: transform .2s;
+}
+
+.view-btn:hover {
+    background: var(--gold-light);
+    transform: scale(1.05);
 }
 
 .product-badge {
@@ -466,7 +472,7 @@ section::before {
     border-radius: 30px;
     font-size: .7rem;
     font-weight: 800;
-    z-index: 6;
+    z-index: 2; /* Keeps badge visible but lets the dark hover overlay slide over it */
 }
 
 .product-info {
@@ -1038,37 +1044,4 @@ footer {
     .about-gallery {
         grid-template-columns: 1fr;
     }
-}
-
-/* ==========================================================================
-   FORCE OVERLAY HOVER FIX
-   ========================================================================== */
-.product-image {
-    position: relative !important;
-    z-index: 1 !important;
-}
-
-.product-image img {
-    position: relative !important;
-    z-index: 2 !important;
-}
-
-.product-image-link {
-    position: absolute !important;
-    inset: 0 !important;
-    z-index: 20 !important; /* Forces the link wrapper on top of the image */
-    display: flex !important;
-    opacity: 0;
-    transition: opacity .25s ease-in-out !important;
-}
-
-/* Force opacity to 1 on hover regardless of other rules */
-.product-card:hover .product-image-link {
-    opacity: 1 !important;
-}
-
-.view-btn {
-    position: relative !important;
-    z-index: 25 !important; /* Places the text on top of everything */
-    pointer-events: auto !important; /* Ensures it can be clicked */
 }
