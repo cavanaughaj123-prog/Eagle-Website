@@ -92,19 +92,31 @@
 
             </div>
 
-            <form class="contact-form">
+            <form 
+            action="https://formsubmit.co/aquinaseagle@gmail.com" 
+            method="POST"
+            class="contact-form"
+            >
 
-                <input type="text"
-                placeholder="Full Name">
+                <input 
+                type="text"
+                name="name"
+                placeholder="Full Name"
+                required>
 
-                <input type="email"
-                placeholder="Email Address">
+                <input 
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required>
 
                 <textarea
-                placeholder="Your Message"></textarea>
+                name="message"
+                placeholder="Your Message"
+                required></textarea>
 
-                <button class="btn btn-primary">
-                    Send Message
+                <button type="submit" class="btn btn-primary">
+                     Send Message
                 </button>
 
             </form>
